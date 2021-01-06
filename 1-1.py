@@ -43,6 +43,8 @@ while qu:
             if not ((bo[AR[0]][AR[1] - 1] == '#' or (AR[0] == AB[0] and AR[1] - 1 == AB[1])) or checkR):
                 if bo[AR[0]][AR[1] - 1] == 'O':
                     checkR = 1
+                    AR=[-1,-1]
+
                 AR[1] = AR[1] - 1
 
     else:
@@ -52,6 +54,7 @@ while qu:
             if not((bo[AR[0]][AR[1] - 1] == '#' or (AR[0] == AB[0] and AR[1] - 1 == AB[1])) or checkR):
                 if bo[AR[0]][AR[1] - 1] == 'O':
                     checkR = 1
+                    AR=[-1,-1]
                 AR[1] = AR[1] - 1
 
             if bo[AB[0]][AB[1] - 1] == 'O':
@@ -86,6 +89,7 @@ while qu:
             if not ((bo[AR[0]][AR[1] + 1] == '#' or (AR[0] == AB[0] and AR[1] + 1 == AB[1])) or checkR):
                 if bo[AR[0]][AR[1] + 1] == 'O':
                     checkR = 1
+                    AR = [-1, -1]
                 AR[1] = AR[1] + 1
     else:
         while not (((bo[AR[0]][AR[1] + 1] == '#' or (AR[0] == AB[0] and AR[1] + 1 == AB[1])) or checkR) and (
@@ -94,6 +98,7 @@ while qu:
             if not ((bo[AR[0]][AR[1] + 1] == '#' or (AR[0] == AB[0] and AR[1] + 1 == AB[1])) or checkR):
                 if bo[AR[0]][AR[1] + 1] == 'O':
                     checkR = 1
+                    AR = [-1, -1]
                 AR[1] = AR[1] + 1
             if bo[AB[0]][AB[1] + 1] == 'O':
                 checkB = 1
@@ -125,6 +130,7 @@ while qu:
             if not ((bo[AR[0]-1][AR[1]] == '#' or (AR[0]-1 == AB[0] and AR[1]== AB[1])) or checkR):
                 if bo[AR[0]-1][AR[1]] == 'O':
                     checkR = 1
+                    AR = [-1, -1]
                 AR[0] = AR[0] - 1
 
     else:
@@ -134,6 +140,7 @@ while qu:
             if not ((bo[AR[0]-1][AR[1]] == '#' or (AR[0]-1 == AB[0] and AR[1] == AB[1])) or checkR):
                 if bo[AR[0]-1][AR[1]] == 'O':
                     checkR = 1
+                    AR = [-1, -1]
                 AR[0] = AR[0] - 1
 
             if bo[AB[0]-1][AB[1]] == 'O':
@@ -169,6 +176,7 @@ while qu:
             if not ((bo[AR[0] + 1][AR[1]] == '#' or (AR[0] + 1 == AB[0] and AR[1] == AB[1])) or checkR):
                 if bo[AR[0] + 1][AR[1]] == 'O':
                     checkR = 1
+                    AR = [-1, -1]
                 AR[0] = AR[0] + 1
 
     else:
@@ -178,6 +186,7 @@ while qu:
             if not ((bo[AR[0] + 1][AR[1]] == '#' or (AR[0] + 1 == AB[0] and AR[1] == AB[1])) or checkR):
                 if bo[AR[0] + 1][AR[1]] == 'O':
                     checkR = 1
+                    AR = [-1, -1]
                 AR[0] = AR[0] + 1
 
             if bo[AB[0] + 1][AB[1]] == 'O':
