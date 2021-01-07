@@ -21,7 +21,7 @@ qu = [(R, B, 0)]
 
 while qu:
     cur=qu.pop(0)
-    if cur[2] == 11:
+    if cur[2] == 10:
         break
     CR = cur[0]
     CB = cur[1]
@@ -202,8 +202,6 @@ while qu:
     if (not checkB) and (AR!=CR or AB!=CB):
         qu.append((AR,AB,cur[2]+1))
 
-
-
 print(cl)
 
-#3시간 26분
+#3시간 31분
