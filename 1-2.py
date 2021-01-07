@@ -1,5 +1,5 @@
-import copy
-
+#백준 12100 2048(Easy) /1시간 31분
+#dfs
 N=int(input())
 bo = [[0] * N for _ in range(N)]
 for i in range(N):

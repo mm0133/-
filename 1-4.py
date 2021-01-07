@@ -8,6 +8,5 @@ for i in range(N):
     if A[i]>=0:
         tem= (A[i])//C+1
         su+=tem
-
 print(su)
 

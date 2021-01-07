@@ -1,3 +1,5 @@
+#백준 13460 구슬찾기2 /3시간 31분
+#bfs
 N, M = map(int, input().split())
 bo = [[0]*M for i in range(N)]
 R = [0, 0]
@@ -204,4 +206,3 @@ while qu:
 
 print(cl)
 
-#3시간 31분

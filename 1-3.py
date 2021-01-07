@@ -1,4 +1,4 @@
-#백준 3190 뱀 / 1시간20분
+#백준 3190 뱀  / 1시간20분
 N=int(input())
 bo=[[0]*(N+2) for i in range(N+2)]
 for i in range(N+2):
