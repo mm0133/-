@@ -73,3 +73,5 @@ def turn(dir):
 for i in inst:
     if turn(i):
         print(state[5])
+
+
